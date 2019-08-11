@@ -1,0 +1,508 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>考研综合应用题中代码书写规范 · Blankj's Glory</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Blankj">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    
+        <link rel="shortcut icon" href='../source/images/favicon.jpg' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../source/images/favicon.jpg' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../source/images/apple-touch-icon.jpg'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../source/images/apple-touch-icon.jpg">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../source/images/apple-touch-icon.jpg">
+        
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"txzh007","repo":"dataStructure","type":"star","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="mailto:txzh007@gmail.com" target="_blank" class="custom-link">我的邮箱</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    引言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    预备知识
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="考研综合应用题中代码书写规范.html">
+            
+                <a href="考研综合应用题中代码书写规范.html">
+            
+                    
+                    考研综合应用题中代码书写规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >考研综合应用题中代码书写规范</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#11-&#x8003;&#x7814;&#x7EFC;&#x5408;&#x5E94;&#x7528;&#x9898;&#x4E2D;&#x4EE3;&#x7801;&#x4E66;&#x5199;&#x89C4;&#x8303;"><b></b>1.1 &#x8003;&#x7814;&#x7EFC;&#x5408;&#x5E94;&#x7528;&#x9898;&#x4E2D;&#x4EE3;&#x7801;&#x4E66;&#x5199;&#x89C4;&#x8303;</a></li><ul><li><span class="title-icon "></span><a href="#111"><b></b>1.1.1</a></li><ul><li><span class="title-icon "></span><a href="#112&#x8003;&#x7814;&#x4E2D;&#x7684;c&#x8BED;&#x8A00;&#x57FA;&#x7840;"><b></b>1.1.2&#x8003;&#x7814;&#x4E2D;&#x7684;C&#x8BED;&#x8A00;&#x57FA;&#x7840;</a></li></ul></ul><li><span class="title-icon "></span><a href="#define&#x5B8F;&#x5B9A;&#x4E49;&#x4F8B;&#x5982;"><b></b>define&#x5B8F;&#x5B9A;&#x4E49;,&#x4F8B;&#x5982;</a></li></ul></div><a href="#11-&#x8003;&#x7814;&#x7EFC;&#x5408;&#x5E94;&#x7528;&#x9898;&#x4E2D;&#x4EE3;&#x7801;&#x4E66;&#x5199;&#x89C4;&#x8303;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="11-&#x8003;&#x7814;&#x7EFC;&#x5408;&#x5E94;&#x7528;&#x9898;&#x4E2D;&#x4EE3;&#x7801;&#x4E66;&#x5199;&#x89C4;&#x8303;"><a name="11-&#x8003;&#x7814;&#x7EFC;&#x5408;&#x5E94;&#x7528;&#x9898;&#x4E2D;&#x4EE3;&#x7801;&#x4E66;&#x5199;&#x89C4;&#x8303;" class="anchor-navigation-ex-anchor" href="#11-&#x8003;&#x7814;&#x7EFC;&#x5408;&#x5E94;&#x7528;&#x9898;&#x4E2D;&#x4EE3;&#x7801;&#x4E66;&#x5199;&#x89C4;&#x8303;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="11-&#x8003;&#x7814;&#x7EFC;&#x5408;&#x5E94;&#x7528;&#x9898;&#x4E2D;&#x4EE3;&#x7801;&#x4E66;&#x5199;&#x89C4;&#x8303;" class="plugin-anchor" href="#11-&#x8003;&#x7814;&#x7EFC;&#x5408;&#x5E94;&#x7528;&#x9898;&#x4E2D;&#x4EE3;&#x7801;&#x4E66;&#x5199;&#x89C4;&#x8303;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1 &#x8003;&#x7814;&#x7EFC;&#x5408;&#x5E94;&#x7528;&#x9898;&#x4E2D;&#x4EE3;&#x7801;&#x4E66;&#x5199;&#x89C4;&#x8303;</h1>
+<h2 id="111"><a name="111" class="anchor-navigation-ex-anchor" href="#111"><i class="fa fa-link" aria-hidden="true"></i></a><a name="111" class="plugin-anchor" href="#111"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1</h2>
+<blockquote>
+<p><strong>&#x8981;&#x5728;&#x7EB8;&#x4E0A;&#x5FEB;&#x901F;&#x7684;&#x5199;&#x51FA;&#x80FD;&#x8BA9;&#x9605;&#x5377;&#x8001;&#x5E08;&#x6EE1;&#x610F;&#x7684;&#x4EE3;&#x7801;,&#x548C;&#x4F7F;&#x7528;&#x7F16;&#x8BD1;&#x5668;&#x7F16;&#x8BD1;&#x901A;&#x8FC7;&#x7684;&#x4EE3;&#x7801;&#x662F;&#x6709;&#x6240;&#x4E0D;&#x540C;&#x7684;.</strong></p>
+</blockquote>
+<p>&#x4F8B;:&#xA0;&#xA0;&#x8BBE;&#x5C06;n(n&gt;1)&#x4E2A;&#x6574;&#x6570;&#x5B58;&#x653E;&#x5230;&#x4E00;&#x7EF4;&#x6570;&#x7EC4;R&#x4E2D;,&#x8BBE;&#x8BA1;&#x4E00;&#x4E2A;&#x7B97;&#x6CD5;,&#x5C06;R&#x4E2D;&#x7684;&#x5E8F;&#x5217;&#x5FAA;&#x73AF;&#x5DE6;&#x79FB;P(0&lt;P&lt;n)&#x4E2A;&#x4F4D;&#x7F6E;,&#x5373;&#x5C06;R&#x4E2D;&#x7684;&#x6570;&#x636E;&#x7531;{X0,X1,...,Xn-1}&#x53D8;&#x6362;&#x4E3A;{Xp,Xp+1,...,Xn-1,X0,X1,...,Xp-1}.&#x8981;&#x6C42;:&#x5199;&#x51FA;&#x672C;&#x9898;&#x7684;&#x7B97;&#x6CD5;&#x63CF;&#x8FF0;. </p>
+<p>&#x5206;&#x6790;:<br>&#xA0;&#xA0;&#xA0;&#xA0; &#x672C;&#x9898;&#x4E0D;&#x96BE;,&#x8981;&#x5B9E;&#x73B0;R&#x4E2D;&#x5E8F;&#x5217;&#x5FAA;&#x73AF;&#x5DE6;&#x79FB;P&#x4E2A;&#x4F4D;&#x7F6E;,&#x53EA;&#x9700;&#x8981;&#x5C06;R&#x4E2D;&#x524D;P&#x4E2A;&#x5143;&#x7D20;&#x9006;&#x7F6E;,&#x518D;&#x5C06;&#x5269;&#x4E0B;&#x7684;&#x5143;&#x7D20;&#x9006;&#x7F6E;,&#x6700;&#x540E;&#x5C06;R&#x4E2D;&#x6240;&#x6709;&#x7684;&#x5143;&#x7D20;&#x5728;&#x6574;&#x4F53;&#x505A;&#x4E00;&#x6B21;&#x9006;&#x7F6E;&#x64CD;&#x4F5C;&#x5373;&#x53EF;.&#x672C;&#x9898;&#x7B97;&#x6CD5;&#x63CF;&#x8FF0;&#x5982;&#x4E0B;:  </p>
+<pre><code class="lang-C"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> N 5</span>
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">reverse</span><span class="hljs-params">(<span class="hljs-keyword">int</span> *arr, <span class="hljs-keyword">int</span> l, <span class="hljs-keyword">int</span> r)</span> </span>{
+  <span class="hljs-keyword">int</span> i, j;
+  <span class="hljs-keyword">for</span> (i = l, j = r; i &lt; j; i++, j--) {
+    <span class="hljs-keyword">int</span> t;
+    t = arr[i];
+    arr[i] = arr[j];
+    arr[j] = t;
+  }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">RCR</span><span class="hljs-params">(<span class="hljs-keyword">int</span> *arr, <span class="hljs-keyword">int</span> n, <span class="hljs-keyword">int</span> p)</span> </span>{
+  reverse(arr, <span class="hljs-number">0</span>, p - <span class="hljs-number">1</span>);
+  reverse(arr, p, n - <span class="hljs-number">1</span>);
+  reverse(arr, <span class="hljs-number">0</span>, n - <span class="hljs-number">1</span>);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">display</span><span class="hljs-params">(<span class="hljs-keyword">int</span> *arr, <span class="hljs-keyword">int</span> n)</span> </span>{
+  <span class="hljs-keyword">int</span> i;
+  <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; n; i++) {
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d &quot;</span>, arr[i]);
+  }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-keyword">int</span> arr[N] = {<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>};  <span class="hljs-comment">//&#x4EBA;&#x4E3A;&#x89C4;&#x5B9A;&#x4E00;&#x4E2A;&#x6D4B;&#x8BD5;&#x7528;&#x4F8B;</span>
+  RCR(arr, <span class="hljs-number">5</span>, <span class="hljs-number">3</span>);
+  display(arr, <span class="hljs-number">5</span>);
+  <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<p>&#x4EE5;&#x4E0A;&#x5185;&#x5BB9;&#x4E3A;&#x5B8C;&#x6574;&#x7684;,&#x53EF;&#x4EE5;&#x5728;&#x7F16;&#x8BD1;&#x5668;&#x4E0B;&#x7F16;&#x8BD1;&#x8FD0;&#x884C;&#x7684;&#x7A0B;&#x5E8F;,&#x7A0B;&#x5E8F;&#x8F83;&#x957F;,&#x5BF9;&#x4E8E;&#x5B9D;&#x8D35;&#x7684;&#x5377;&#x9762;&#x800C;&#x8A00;&#x5B8C;&#x5168;&#x6CA1;&#x6709;&#x5FC5;&#x8981;.</p>
+<pre><code class="lang-C"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span>  // &#x8FD9;&#x884C;&#x4EE3;&#x7801;C&#x8BED;&#x8A00;&#x5FC5;&#x7528;,&#x65E0;&#x6CD5;&#x533A;&#x5206;&#x8003;&#x8BD5;&#x5B66;&#x4E60;&#x60C5;&#x51B5;&#x7684;&#x4F18;&#x52A3;&#x52BF;</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> N 5         <span class="hljs-comment">// &#x540C;&#x4E0A;</span></span>
+</code></pre>
+<pre><code class="lang-C"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">display</span><span class="hljs-params">(<span class="hljs-keyword">int</span> *arr, <span class="hljs-keyword">int</span> n)</span> </span>{  <span class="hljs-comment">//&#x6253;&#x5370;&#x51FD;&#x6570; &#x4E0D;&#x662F;&#x6838;&#x5FC3;&#x4EE3;&#x7801;&#x90E8;&#x5206;</span>
+  <span class="hljs-keyword">int</span> i;
+  <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; n; i++) {
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d &quot;</span>, arr[i]);
+  }
+}
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{                     <span class="hljs-comment">//main&#x51FD;&#x6570;,&#x4E0E;&#x6838;&#x5FC3;&#x4EE3;&#x7801;&#x65E0;&#x5173;</span>
+  <span class="hljs-keyword">int</span> arr[N] = {<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>};  
+  RCR(arr, <span class="hljs-number">5</span>, <span class="hljs-number">3</span>);
+  display(arr, <span class="hljs-number">5</span>);
+  <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4E24;&#x90E8;&#x5206;,&#x5BF9;&#x4E8E;&#x6838;&#x5FC3;&#x4EE3;&#x7801;&#x90E8;&#x5206;,&#x90FD;&#x662F;&#x5C5E;&#x4E8E;&#x591A;&#x4F59;&#x7684;,&#x5728;&#x5377;&#x9762;&#x6709;&#x9650;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x53EF;&#x4EE5;&#x7701;&#x7565;.  </p>
+<p><strong><font color="red">&#x5199;&#x6CE8;&#x91CA;</font></strong><br><strong><font color="red">&#x5199;&#x6CE8;&#x91CA;</font></strong><br><strong><font color="red">&#x5199;&#x6CE8;&#x91CA;</font></strong>  </p>
+<p>&#x91CD;&#x8981;&#x7684;&#x4E8B;&#x60C5;&#x8981;&#x8BF4;&#x4E09;&#x904D;!</p>
+<p>&#x6211;&#x4EEC;&#x90FD;&#x77E5;&#x9053;,&#x5728;&#x63A5;&#x624B;&#x522B;&#x4EBA;&#x7684;&#x4EE3;&#x7801;&#x65F6;,&#x4E00;&#x822C;&#x90FD;&#x4F1A;&#x6709;&#x4EA4;&#x63A5;&#x6587;&#x6863;.&#x4EA4;&#x63A5;&#x6587;&#x6863;&#x7684;&#x5185;&#x5BB9;,&#x5C31;&#x662F;&#x5BF9;&#x4E8E;&#x6B64;&#x9879;&#x76EE;&#x7684;&#x5404;&#x79CD;&#x89C4;&#x8303;,&#x63A5;&#x53E3;&#x7684;&#x8BBE;&#x8BA1;&#x60C5;&#x51B5;,&#x53C2;&#x6570;&#x7684;&#x610F;&#x4E49;&#x7B49;&#x7B49;.&#x5728;&#x8003;&#x7814;&#x7684;&#x8BD5;&#x5377;&#x4E0A;,&#x6BCF;&#x4E2A;&#x4EBA;&#x7684;&#x4EE3;&#x7801;&#x98CE;&#x683C;&#x90FD;&#x5404;&#x4E0D;&#x76F8;&#x540C;,&#x6240;&#x4EE5;&#x4E00;&#x4E2A;&#x6CE8;&#x91CA;&#x591A;&#x7684;&#x4EE3;&#x7801;,&#x4F1A;&#x8BA9;&#x4EBA;&#x80FD;&#x591F;&#x66F4;&#x5FEB;&#x7684;&#x7406;&#x89E3;&#x4F60;&#x7684;&#x4EE3;&#x7801;.</p>
+<p>&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x6765;&#x4E3E;&#x4E2A;&#x4F8B;&#x5B50;.</p>
+<p>&#x8FD9;&#x662F;leetcode &#x7B2C;168&#x9898; <a href="https://leetcode-cn.com/problems/excel-sheet-column-title/description/" target="_blank">Excel&#x8868;&#x5217;&#x540D;&#x79F0;</a></p>
+<p>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x6CA1;&#x6709;&#x6CE8;&#x91CA;&#x7684;&#x4EE3;&#x7801;</p>
+<pre><code class="lang-C"><span class="hljs-comment">/*
+ * @lc app=leetcode.cn id=168 lang=c
+ *
+ * [168] Excel&#x8868;&#x5217;&#x540D;&#x79F0;
+ */</span>
+
+<span class="hljs-function"><span class="hljs-keyword">char</span> *<span class="hljs-title">convertToTitle</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n)</span> </span>{
+    <span class="hljs-keyword">if</span> (n &lt; <span class="hljs-number">0</span>) {
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;&quot;</span>;
+    }
+    <span class="hljs-keyword">char</span> *res = <span class="hljs-built_in">malloc</span>(<span class="hljs-number">10</span>);
+    <span class="hljs-keyword">int</span> len = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">while</span> (n &gt; <span class="hljs-number">0</span>) {
+        res[len++] = <span class="hljs-string">&apos;A&apos;</span> + ((n - <span class="hljs-number">1</span>) % <span class="hljs-number">26</span>);
+        n = (n - <span class="hljs-number">1</span>) / <span class="hljs-number">26</span>;
+    }  
+    res[len] = <span class="hljs-string">&apos;\0&apos;</span>;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; len / <span class="hljs-number">2</span>; i++) {
+        <span class="hljs-keyword">char</span> tmp = res[i];
+        res[i] = res[len - <span class="hljs-number">1</span> - i];
+        res[len - <span class="hljs-number">1</span> - i] = tmp;
+    }
+    <span class="hljs-keyword">return</span> res;
+}
+</code></pre>
+<p>&#x662F;&#x4E0D;&#x662F;&#x770B;&#x8D77;&#x6765;&#x975E;&#x5E38;&#x7684;&#x7D2F;,&#x867D;&#x7136;&#x6EE1;&#x6253;&#x6EE1;&#x7B97;&#x53EA;&#x6709;20&#x4E0D;&#x5230;&#x7684;&#x4EE3;&#x7801;,&#x4F46;&#x662F;&#x9605;&#x8BFB;&#x8D77;&#x6765;&#x5374;&#x662F;&#x5F88;&#x8D39;&#x52B2;&#x7684;&#x4E00;&#x4EF6;&#x4E8B;&#x60C5;.</p>
+<h4 id="&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7ED9;&#x4EE3;&#x7801;&#x52A0;&#x4E0A;&#x6CE8;&#x91CA;&#x4F7F;&#x5F97;&#x9605;&#x5377;&#x7684;&#x8001;&#x5E08;&#x4E00;&#x4E0B;&#x5B50;&#x5C31;&#x80FD;&#x660E;&#x767D;&#x6211;&#x4EEC;&#x7684;&#x7F16;&#x7801;&#x601D;&#x60F3;"><a name="&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7ED9;&#x4EE3;&#x7801;&#x52A0;&#x4E0A;&#x6CE8;&#x91CA;&#x4F7F;&#x5F97;&#x9605;&#x5377;&#x7684;&#x8001;&#x5E08;&#x4E00;&#x4E0B;&#x5B50;&#x5C31;&#x80FD;&#x660E;&#x767D;&#x6211;&#x4EEC;&#x7684;&#x7F16;&#x7801;&#x601D;&#x60F3;" class="anchor-navigation-ex-anchor" href="#&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7ED9;&#x4EE3;&#x7801;&#x52A0;&#x4E0A;&#x6CE8;&#x91CA;&#x4F7F;&#x5F97;&#x9605;&#x5377;&#x7684;&#x8001;&#x5E08;&#x4E00;&#x4E0B;&#x5B50;&#x5C31;&#x80FD;&#x660E;&#x767D;&#x6211;&#x4EEC;&#x7684;&#x7F16;&#x7801;&#x601D;&#x60F3;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7ED9;&#x4EE3;&#x7801;&#x52A0;&#x4E0A;&#x6CE8;&#x91CA;&#x4F7F;&#x5F97;&#x9605;&#x5377;&#x7684;&#x8001;&#x5E08;&#x4E00;&#x4E0B;&#x5B50;&#x5C31;&#x80FD;&#x660E;&#x767D;&#x6211;&#x4EEC;&#x7684;&#x7F16;&#x7801;&#x601D;&#x60F3;" class="plugin-anchor" href="#&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7ED9;&#x4EE3;&#x7801;&#x52A0;&#x4E0A;&#x6CE8;&#x91CA;&#x4F7F;&#x5F97;&#x9605;&#x5377;&#x7684;&#x8001;&#x5E08;&#x4E00;&#x4E0B;&#x5B50;&#x5C31;&#x80FD;&#x660E;&#x767D;&#x6211;&#x4EEC;&#x7684;&#x7F16;&#x7801;&#x601D;&#x60F3;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7ED9;&#x4EE3;&#x7801;&#x52A0;&#x4E0A;&#x6CE8;&#x91CA;,&#x4F7F;&#x5F97;&#x9605;&#x5377;&#x7684;&#x8001;&#x5E08;&#x4E00;&#x4E0B;&#x5B50;&#x5C31;&#x80FD;&#x660E;&#x767D;&#x6211;&#x4EEC;&#x7684;&#x7F16;&#x7801;&#x601D;&#x60F3;.</h4>
+<pre><code class="lang-C"> <span class="hljs-comment">/*
+     &#x672C;&#x8D28;&#x4E0A;&#x6765;&#x8BF4;excel&#x5E8F;&#x53F7;&#x662F;26&#x8FDB;&#x5236;&#x7684;&#x5B57;&#x7B26;&#x5E8F;&#x5217; 
+     &#x6211;&#x4EEC;&#x7406;&#x7531;&#x8FDB;&#x5236;&#x8F6C;&#x6362;&#x7684;&#x601D;&#x60F3;&#x6765;&#x505A;
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">char</span> *<span class="hljs-title">convertToTitle</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n)</span> </span>{
+    <span class="hljs-keyword">if</span> (n &lt; <span class="hljs-number">0</span>) { <span class="hljs-comment">// n&#x5C0F;&#x4E8E;0 &#x7ED3;&#x679C;&#x4E0D;&#x5B58;&#x5728;</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;&quot;</span>;
+    }
+    <span class="hljs-keyword">char</span> *res = <span class="hljs-built_in">malloc</span>(<span class="hljs-number">10</span>); <span class="hljs-comment">// &#x5B9A;&#x4E49;&#x8FD4;&#x56DE;&#x5B57;&#x7B26;&#x4E32; &#x5E76;&#x8BBE;&#x7F6E;&#x5927;&#x5C0F;</span>
+    <span class="hljs-keyword">int</span> len = <span class="hljs-number">0</span>;
+
+    <span class="hljs-keyword">while</span> (n &gt; <span class="hljs-number">0</span>) {  <span class="hljs-comment">// &#x5229;&#x7528;&#x5FAA;&#x73AF;&#x6765;&#x8F6C;&#x6362;&#x8FDB;&#x5236;   </span>
+        res[len++] = <span class="hljs-string">&apos;A&apos;</span> + ((n - <span class="hljs-number">1</span>) % <span class="hljs-number">26</span>); 
+        n = (n - <span class="hljs-number">1</span>) / <span class="hljs-number">26</span>;
+    }  
+    res[len] = <span class="hljs-string">&apos;\0&apos;</span>;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; len / <span class="hljs-number">2</span>; i++) { <span class="hljs-comment">// &#x56E0;&#x4E3A;&#x8FDB;&#x5236;&#x8F6C;&#x6362;&#x662F;&#x5012;&#x7F6E;&#x7ED3;&#x679C;,&#x6240;&#x4EE5;&#x5C06;&#x6570;&#x7EC4;&#x7FFB;&#x8F6C;</span>
+        <span class="hljs-keyword">char</span> tmp = res[i];
+        res[i] = res[len - <span class="hljs-number">1</span> - i];
+        res[len - <span class="hljs-number">1</span> - i] = tmp;
+    }
+    <span class="hljs-keyword">return</span> res;
+}
+</code></pre>
+<pre><code>&#x8FD9;&#x6837;&#x6211;&#x4EEC;&#x5C31;&#x73A9;&#x6210;&#x4E86;&#x4E00;&#x9053;&#x5E38;&#x89C4;&#x9898;&#x76EE;&#x7684;&#x7B54;&#x6848;,&#x4F46;&#x662F;&#x8FD9;&#x6837;&#x5176;&#x5B9E;&#x8FD8;&#x662F;&#x6709;&#x7455;&#x75B5;&#x7684;.  &#x4F8B;&#x5982;&#x7FFB;&#x8F6C;&#x5B57;&#x7B26;&#x4E32;&#x90E8;&#x5206;,&#x5B8C;&#x5168;&#x53EF;&#x4EE5;&#x5355;&#x72EC;&#x63D0;&#x51FA;&#x6765;&#x6210;&#x4E3A;&#x4E00;&#x4E2A;&#x51FD;&#x6570;,&#x964D;&#x4F4E;&#x4EE3;&#x7801;&#x7684;&#x8026;&#x5408;&#x6027;,&#x63D0;&#x9AD8;&#x590D;&#x7528;&#x7A0B;&#x5EA6;.&#x5F53;&#x7136;,&#x5728;&#x8003;&#x573A;&#x4E0A;&#x65F6;&#x95F4;&#x4E0D;&#x5145;&#x88D5;&#x7684;&#x60C5;&#x51B5;&#x4E0B;,&#x80FD;&#x5C3D;&#x81EA;&#x5DF1;&#x53EF;&#x80FD;&#x5199;&#x51FA;&#x6700;&#x597D;&#x7684;&#x4EE3;&#x7801;&#x5C31;&#x8DB3;&#x591F;&#x4E86;.
+</code></pre><h3 id="112&#x8003;&#x7814;&#x4E2D;&#x7684;c&#x8BED;&#x8A00;&#x57FA;&#x7840;"><a name="112&#x8003;&#x7814;&#x4E2D;&#x7684;c&#x8BED;&#x8A00;&#x57FA;&#x7840;" class="anchor-navigation-ex-anchor" href="#112&#x8003;&#x7814;&#x4E2D;&#x7684;c&#x8BED;&#x8A00;&#x57FA;&#x7840;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="112&#x8003;&#x7814;&#x4E2D;&#x7684;c&#x8BED;&#x8A00;&#x57FA;&#x7840;" class="plugin-anchor" href="#112&#x8003;&#x7814;&#x4E2D;&#x7684;c&#x8BED;&#x8A00;&#x57FA;&#x7840;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.2&#x8003;&#x7814;&#x4E2D;&#x7684;C&#x8BED;&#x8A00;&#x57FA;&#x7840;</h3>
+<h4 id="1&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;"><a name="1&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;" class="anchor-navigation-ex-anchor" href="#1&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="1&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;" class="plugin-anchor" href="#1&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;</h4>
+<p>  &#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;: int long char float double... &#x6B64;&#x90E8;&#x5206;&#x4E0D;&#x7528;&#x591A;&#x8BF4;&#x57FA;&#x672C;&#x90FD;&#x6709;&#x4E86;&#x89E3;.
+  (1)&#x7ED3;&#x6784;&#x578B;
+  &#x7ED3;&#x6784;&#x578B;&#x53EF;&#x4EE5;&#x770B;&#x4F5C;&#x662F;&#x7528;&#x6237;&#x4F7F;&#x7528;&#x5DF2;&#x6709;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;(int,double,float...)&#x7684;&#x57FA;&#x7840;&#x5236;&#x4F5C;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;.
+  &#x4E00;&#x4E2A;&#x6700;&#x7B80;&#x5355;&#x7684;&#x4F8B;&#x5B50;:&#x6570;&#x7EC4; int a[10];
+  &#x8BE5;&#x8BED;&#x53E5;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;,&#x540D;&#x5B57;&#x4E3A;10,&#x8BB2;10&#x4E2A;int&#x6574;&#x5F62;&#x53D8;&#x91CF;&#x8FDE;&#x7EED;&#x5730;&#x6446;&#x5728;&#x4E00;&#x8D77;,&#x8BB2;&#x5404;&#x4E2A;&#x6574;&#x5F62;&#x53D8;&#x91CF;&#x7684;&#x5173;&#x7CFB;&#x901A;&#x8FC7;&#x6570;&#x7EC4;&#x4E0B;&#x6807;&#x7684;&#x5F62;&#x5F0F;&#x6765;&#x53CD;&#x5E94;.
+  &#x4F46;&#x662F;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x60F3;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x7ED3;&#x6784;&#x91CC;&#x6709;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;,&#x8FD9;&#x6837;&#x6211;&#x4EEC;&#x5C31;&#x9700;&#x8981;&#x7528;&#x5230;&#x4E86;&#x7ED3;&#x6784;&#x4F53;. <strong>&#x7ED3;&#x6784;&#x4F53;&#x5C31;&#x662F;&#x7CFB;&#x7EDF;&#x7CFB;&#x7EDF;&#x7ED9;&#x7A0B;&#x5E8F;&#x5458;&#x53EA;&#x505A;&#x65B0;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x4E00;&#x79CD;&#x673A;&#x5236;,&#x5373;&#x53EF;&#x4EE5;&#x7528;&#x7CFB;&#x7EDF;&#x5DF2;&#x7ECF;&#x6709;&#x7684;&#x4E0D;&#x540C;&#x7684;&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x6216;&#x7528;&#x6237;&#x5B9A;&#x4E49;&#x7684;&#x7ED3;&#x6784;&#x578B;,&#x7EC4;&#x5408;&#x6210;&#x7528;&#x6237;&#x9700;&#x8981;&#x7684;&#x590D;&#x6742;&#x6570;&#x636E;&#x7C7B;&#x578B;.</strong>
+  &#x4F8B;&#x5982;:</p>
+<pre><code class="lang-C">  typeof <span class="hljs-keyword">struct</span>{
+
+    <span class="hljs-keyword">int</span> a;
+    <span class="hljs-keyword">char</span> b;
+    <span class="hljs-keyword">float</span> c;
+
+  }TypeA;
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;,&#x5373;TypeA&#x7C7B;&#x578B;.&#x5B9A;&#x4E49;TypeA&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;&#x8FD8;&#x662F;&#x50CF;&#x57FA;&#x672C;&#x7C7B;&#x578B;&#x4E00;&#x6837;,TypeA typea;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;,&#x6570;&#x7EC4;&#x4E5F;&#x540C;&#x7406;TypeA typea[10];,&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x5728;&#x4F7F;&#x7528;&#x4E2D;&#x4F1A;&#x6709;&#x4E00;&#x70B9;&#x5C0F;&#x5C0F;&#x7684;&#x533A;&#x522B;.&#x6BD4;&#x5982;,&#x6570;&#x7EC4;&#x518D;&#x4F7F;&#x7528;&#x4E2D;&#x53D6;&#x503C;&#x7684;&#x65B9;&#x5F0F;&#x5F62;&#x4F3C;a[1],a[2]&#x8FD9;&#x79CD;a[&#x6570;&#x7EC4;&#x4E0B;&#x6807;],&#x800C;&#x7ED3;&#x6784;&#x4F53;&#x5219;&#x4E3A;a.b,a.c&#x8FD9;&#x79CD; a.&#x53D8;&#x91CF;&#x540D; &#x7684;&#x5F62;&#x5F0F;
+&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x5173;&#x7CFB;&#x56FE;&#x56FE;1-1&#x6765;&#x8BF4;&#x660E;.
+<img src="image/&#x56FE;1-1.jpg" alt="&#x56FE;1-1"></p>
+<p>  (2)&#x6307;&#x9488;&#x578B;
+  &#x6307;&#x9488;&#x578B;&#x5C5E;&#x4E8E;&#x6BD4;&#x8F83;&#x96BE;&#x7406;&#x89E3;&#x7684;&#x90E8;&#x5206;.&#x5BF9;&#x4E8E;&#x5176;&#x4ED6;&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;,&#x53D8;&#x91CF;&#x91CC;&#x5B58;&#x50A8;&#x7684;&#x662F;&#x6570;&#x636E;&#x5143;&#x7D20;&#x7684;&#x5185;&#x5BB9;,&#x800C;&#x6307;&#x9488;&#x578B;&#x53D8;&#x91CF;&#x91CC;&#x88C5;&#x7684;&#x662F;&#x53D8;&#x91CF;&#x7684;&#x5730;&#x5740;,&#x901A;&#x8FC7;&#x5B83;&#x53EF;&#x4EE5;&#x627E;&#x51FA;&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x4F4D;&#x7F6E;,&#x5C31;&#x50CF;&#x4E00;&#x4E2A;&#x63D0;&#x793A;&#x65B9;&#x5411;&#x7684;&#x6307;&#x9488;,&#x6307;&#x51FA;&#x4E86;&#x67D0;&#x4E2A;&#x53D8;&#x91CF;&#x7684;&#x4F4D;&#x7F6E;,&#x6240;&#x4EE5;&#x53EB;&#x6307;&#x9488;&#x578B;&#x53D8;&#x91CF;.</p>
+<pre><code class="lang-c">  <span class="hljs-keyword">int</span> *a;       <span class="hljs-comment">// &#x5BF9;&#x6BD4; int a;</span>
+  <span class="hljs-keyword">char</span> *b;      <span class="hljs-comment">// &#x5BF9;&#x6BD4; char b;</span>
+  <span class="hljs-keyword">float</span> *c;     <span class="hljs-comment">// &#x5BF9;&#x6BD4; float c;</span>
+  TypeA *d;     <span class="hljs-comment">// &#x5BF9;&#x6BD4; TypeA d;</span>
+</code></pre>
+<p>  &#x4E0A;&#x9762;&#x7684;&#x56DB;&#x79CD;&#x8BED;&#x53E5;&#x4E0E;&#x6211;&#x4EEC;&#x5176;&#x4ED6;&#x7C7B;&#x578B;&#x53D8;&#x91CF;&#x800C;&#x8A00;&#x4EC5;&#x4EC5;&#x591A;&#x4E86;&#x4E00;&#x4E2A;&quot;<em>&quot;.<br>  &#x5982;&#x679C;a&#x662F;&#x4E00;&#x4E2A;&#x6307;&#x9488;&#x578B;&#x53D8;&#x91CF;,&#x4E14;&#x4ED6;&#x6307;&#x5411;&#x53D8;&#x91CF;b&#x5219;a&#x4E2D;&#x5B58;&#x653E;&#x53D8;&#x91CF;b&#x6240;&#x5728;&#x7684;&#x5730;&#x5740;,</em>a&#x5C31;&#x662F;&#x53D6;b&#x7684;&#x503C;(x=*a;&#x7B49;&#x4EF7;&#x4E8E;x=b;),&amp;b&#x5C31;&#x662F;&#x53D6;&#x53D8;&#x91CF;b&#x7684;&#x5730;&#x5740;,&#x8BED;&#x53E5;a=&amp;b&#x5C31;&#x662F;&#x8BB2;&#x53D8;&#x91CF;b&#x7684;&#x5730;&#x5740;&#x5B58;&#x4E8E;a&#x4E2D;,&#x5373;&#x5927;&#x5BB6;&#x5E38;&#x8BF4;&#x7684;&#x6307;&#x9488;a&#x6307;&#x5411;b;</p>
+<p>  <strong>&#x6307;&#x9488;&#x7C7B;&#x578B;&#x5728;&#x8003;&#x7814;&#x4E2D;&#x7528;&#x5F97;&#x6700;&#x591A;&#x7684;&#x5730;&#x65B9;&#x5C31;&#x662F;&#x548C;&#x7ED3;&#x6784;&#x578B;&#x7ED3;&#x5408;&#x8D77;&#x6765;&#x6784;&#x9020;&#x7684;&#x7ED3;&#x6784;&#x70B9;(&#x5982;&#x94FE;&#x8868;&#x7684;&#x8282;&#x70B9;,&#x4E8C;&#x53C9;&#x6811;&#x7684;&#x8282;&#x70B9;&#x7B49;)</strong></p>
+<p>  (3)&#x8282;&#x70B9;&#x7684;&#x6784;&#x9020;
+  &#x8981;&#x6784;&#x9020;&#x4E00;&#x79CD;&#x8282;&#x70B9;,&#x5FC5;&#x987B;&#x5148;&#x5B9A;&#x4E49;&#x8282;&#x70B9;&#x7684;&#x7C7B;&#x578B;<br>  1) &#x94FE;&#x8868;&#x8282;&#x70B9;&#x7684;&#x5B9A;&#x4E49;<br>  &#x94FE;&#x8868;&#x8282;&#x70B9;&#x6709;&#x4E24;&#x4E2A;&#x57DF;,&#x4E00;&#x4E2A;&#x662F;&#x6570;&#x636E;&#x57DF;,&#x7528;&#x6765;&#x5B58;&#x653E;&#x6570;&#x636E;,&#x4E00;&#x4E2A;&#x662F;&#x6307;&#x9488;&#x57DF;,&#x7528;&#x6765;&#x5B58;&#x653E;&#x4E0B;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x4F4D;&#x7F6E;.
+  &#x94FE;&#x8868;&#x7ED3;&#x6784;&#x4F53;&#x5B9A;&#x4E49;&#x5982;&#x4E0B;</p>
+<pre><code class="lang-c">    <span class="hljs-keyword">typedef</span> <span class="hljs-keyword">struct</span> Node{
+      <span class="hljs-keyword">int</span> data;                <span class="hljs-comment">// &#x6570;&#x636E;&#x57DF; </span>
+      <span class="hljs-keyword">struct</span> Node *next;       <span class="hljs-comment">// &#x4E0B;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x4F4D;&#x7F6E; &#x6307;&#x5411;Node&#x7C7B;&#x578B;&#x53D8;&#x91CF;&#x7684;&#x6307;&#x9488;</span>
+    }Node;
+</code></pre>
+<p>  2) &#x4E8C;&#x53C9;&#x6811;&#x7ED3;&#x6784;&#x7684;&#x5B9A;&#x4E49;.<br>  &#x5728;&#x94FE;&#x8868;&#x7ED3;&#x6784;&#x7684;&#x57FA;&#x7840;&#x4E0A;,&#x518D;&#x52A0;&#x4E00;&#x4E2A;&#x6307;&#x5411;&#x81EA;&#x5DF1;&#x540C;&#x4E00;&#x7C7B;&#x578B;&#x53D8;&#x91CF;&#x7684;&#x6307;&#x9488;&#x57DF;,&#x5373;&#x4E8C;&#x53C9;&#x6811;&#x7ED3;&#x70B9;&#x7ED3;&#x6784;&#x578B;,&#x4F8B;&#x5982;:</p>
+<pre><code class="lang-c">    <span class="hljs-keyword">typedef</span> <span class="hljs-keyword">struct</span> BTNode{
+      <span class="hljs-keyword">int</span> data;                    <span class="hljs-comment">// &#x6570;&#x636E;&#x57DF;</span>
+      <span class="hljs-keyword">struct</span> BTNode *lchild;       <span class="hljs-comment">// &#x6307;&#x5411;&#x5DE6;&#x5B69;&#x5B50;</span>
+      <span class="hljs-keyword">struct</span> BTNode *rchild;       <span class="hljs-comment">// &#x6307;&#x5411;&#x6709;&#x5B69;&#x5B50;</span>
+    }BTNode;
+</code></pre>
+<p>  &#x5728;&#x8003;&#x7814;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x4E2D;&#x53EA;&#x9700;&#x8981;&#x719F;&#x7EC3;&#x7684;&#x638C;&#x63E1;&#x4EE5;&#x4E0A;&#x4E24;&#x79CD;&#x8282;&#x70B9;(&#x94FE;&#x8868;,&#x4E8C;&#x53C9;&#x6811;)&#x7684;&#x5B9A;&#x4E49;&#x65B9;&#x6CD5;,&#x5176;&#x4ED6;&#x8282;&#x70B9;&#x90FD;&#x662F;&#x7531;&#x8FD9;&#x4E24;&#x79CD;&#x884D;&#x751F;&#x800C;&#x6765;&#x7684;,&#x65E0;&#x9700;&#x7279;&#x522B;&#x8BB0;&#x5FC6;.</p>
+<p>  <strong>&#x5BF9;&#x4E8E;C&#x8BED;&#x8A00;&#x6765;&#x8BF4;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;&#x7B80;&#x4FBF;&#x7684;&#x7ED3;&#x6784;&#x4F53;&#x5B9A;&#x4E49;,&#x5982;&#x4E0B;&#x6240;&#x793A;</strong></p>
+<pre><code class="lang-c">  <span class="hljs-keyword">struct</span> Node{
+    <span class="hljs-keyword">int</span> data;
+    Node *next;
+  }
+  <span class="hljs-keyword">struct</span> BTNode{
+    <span class="hljs-keyword">int</span> data;
+    BTNode *lchild;      
+    BTNode *rchild;  
+  }
+</code></pre>
+<p> <strong><font color="red"> &#x7EAF;C&#x7F16;&#x8BD1;&#x5668;&#x65E0;&#x6CD5;&#x901A;&#x8FC7;&#x4E0A;&#x8FF0;&#x4F8B;&#x5B50;,&#x8BF7;&#x53EA;&#x8003;C&#x8BED;&#x8A00;&#x7684;&#x540C;&#x5B66;&#x4E25;&#x683C;&#x9075;&#x5FAA;,&#x907F;&#x514D;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x9EBB;&#x70E6;.</font></strong></p>
+<p> (4) &#x5173;&#x4E8E;typedef&#x548C;#define<br>  1) typedef<br>  tyoedef &#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E3A;&#x7ED9;&#x73B0;&#x6709;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x8D77;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x540D;&#x5B57;.
+  &#x5982;:</p>
+<pre><code class="lang-c">  <span class="hljs-keyword">typedef</span> <span class="hljs-keyword">struct</span> {....}TypeA; <span class="hljs-comment">// &#x610F;&#x601D;&#x662F; struct{...} &#x8D77;&#x4E00;&#x4E2A;&#x540D;&#x5B57;&#x53EB; TypeA.</span>
+
+  <span class="hljs-keyword">typedef</span> <span class="hljs-keyword">int</span> A;              <span class="hljs-comment">// &#x610F;&#x601D;&#x7ED9;int&#x7C7B;&#x578B; &#x8D77;&#x4E2A;&#x65B0;&#x540D;&#x5B57; &#x53EB;A  A b;&#x7B49;&#x4EF7;&#x4E8E;int b;</span>
+</code></pre>
+<p>  <strong><em>&#x4E0A;&#x8FF0;&#x57FA;&#x672C;&#x53EA;&#x7528;&#x4E8E;&#x7ED3;&#x6784;&#x4F53;&#x7684;&#x5B9A;&#x4E49;&#x65F6;,&#x8D77;&#x540D;&#x79F0;</em></strong>
+  2) #define  </p>
+<h1 id="define&#x5B8F;&#x5B9A;&#x4E49;&#x4F8B;&#x5982;"><a name="define&#x5B8F;&#x5B9A;&#x4E49;&#x4F8B;&#x5982;" class="anchor-navigation-ex-anchor" href="#define&#x5B8F;&#x5B9A;&#x4E49;&#x4F8B;&#x5982;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="define&#x5B8F;&#x5B9A;&#x4E49;&#x4F8B;&#x5982;" class="plugin-anchor" href="#define&#x5B8F;&#x5B9A;&#x4E49;&#x4F8B;&#x5982;"><i class="fa fa-link" aria-hidden="true"></i></a>define&#x5B8F;&#x5B9A;&#x4E49;,&#x4F8B;&#x5982;</h1>
+<pre><code class="lang-c">  <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> maxSize 50</span>
+
+  <span class="hljs-keyword">int</span> a[maxSize];    <span class="hljs-comment">// &#x5728;&#x7A0B;&#x5E8F;&#x9884;&#x5904;&#x7406;&#x65F6;,&#x8BB2;&#x6B64;&#x5904;maxSize&#x66FF;&#x6362;&#x6210; &#x5B9A;&#x4E49;&#x7684;&#x5E38;&#x91CF;50</span>
+</code></pre>
+<h4 id="2-&#x51FD;&#x6570;"><a name="2-&#x51FD;&#x6570;" class="anchor-navigation-ex-anchor" href="#2-&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="2-&#x51FD;&#x6570;" class="plugin-anchor" href="#2-&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x51FD;&#x6570;</h4>
+<p> &#x8FD9;&#x4E2A;&#x57FA;&#x672C;&#x4E0A;&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;,&#x90FD;&#x5927;&#x5DEE;&#x4E0D;&#x5DEE;&#x5C31;&#x884C;,&#x8FD9;&#x91CC;&#x5C31;&#x4E0D;&#x8FC7;&#x591A;&#x8D58;&#x8FF0;.<strong><em>&#x4ED4;&#x7EC6;&#x533A;&#x522B;&#x5F62;&#x53C2;&#x4E0E;&#x5B9E;&#x53C2;&#x7684;&#x533A;&#x522B;</em></strong> &#x5373;&#x53EF;.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 预备知识">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"考研综合应用题中代码书写规范","level":"1.2.1","depth":2,"previous":{"title":"预备知识","level":"1.2","depth":1,"path":"1-预备知识/README.md","ref":"1-预备知识/README.md","articles":[{"title":"考研综合应用题中代码书写规范","level":"1.2.1","depth":2,"path":"1-预备知识/考研综合应用题中代码书写规范.md","ref":"1-预备知识/考研综合应用题中代码书写规范.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","github","github-buttons","sharing-plus","anchor-navigation-ex","favicon","livereload"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/txzh007"},"livereload":{},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":{"shortcut":"./source/images/favicon.jpg","bookmark":"./source/images/favicon.jpg","appleTouch":"./source/images/apple-touch-icon.jpg","appleTouchMore":{"120x120":"./source/images/apple-touch-icon.jpg","180x180":"./source/images/apple-touch-icon.jpg"}},"github-buttons":{"buttons":[{"user":"txzh007","repo":"dataStructure","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"Blankj","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Blankj's Glory","language":"zh-hans","links":{"sidebar":{"我的邮箱":"mailto:txzh007@gmail.com"}},"gitbook":"3.2.3","description":"select * from learn"},"file":{"path":"1-预备知识/考研综合应用题中代码书写规范.md","mtime":"2019-08-11T15:00:54.137Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-11T14:59:04.793Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
