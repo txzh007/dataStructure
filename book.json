@@ -24,8 +24,7 @@
         "github-buttons",
         "sharing-plus",
         "anchor-navigation-ex",
-        "favicon",
-        "summary"
+        "favicon"
     ],
     "pluginsConfig": {
         "github": {
