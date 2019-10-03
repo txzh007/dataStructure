@@ -1,0 +1,36 @@
+{
+  "name": "dataStructure",
+  "version": "1.0.0",
+  "description": "create on 2019-08-03 12:29:22  \r [预览](https://txzh007.github.io/dataStructure/)",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "gitbook-plugin-anchor-navigation-ex": "^1.0.14",
+    "gitbook-plugin-anchors": "^0.7.1",
+    "gitbook-plugin-expandable-chapters-small": "^0.1.7",
+    "gitbook-plugin-favicon": "^0.0.2",
+    "gitbook-plugin-github": "^2.0.0",
+    "gitbook-plugin-github-buttons": "^3.0.0",
+    "gitbook-plugin-sharing-plus": "^0.0.2",
+    "gitbook-plugin-splitter": "^0.0.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "gitbook build ./content ./docs",
+    "dev": "gitbook serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/txzh007/dataStructure.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/txzh007/dataStructure/issues"
+  },
+  "homepage": "https://github.com/txzh007/dataStructure#readme"
+}
