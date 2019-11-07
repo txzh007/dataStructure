@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>2.1 线性表的基本概念与实现 · GitBook</title>
+        <title>3.1 栈和队列的基本概念 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,7 +57,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="线性表的结构体定义和基本操作.html" />
+    <link rel="next" href="栈和队列的存储结构、算法与应用.html" />
     
     
     <link rel="prev" href="./" />
@@ -160,9 +160,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="./">
+        <li class="chapter " data-level="1.3" data-path="../2-线性表/">
             
-                <a href="./">
+                <a href="../2-线性表/">
             
                     
                     第二章 线性表
@@ -174,9 +174,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.3.1" data-path="线性表的基本概念与实现.html">
+        <li class="chapter " data-level="1.3.1" data-path="../2-线性表/线性表的基本概念与实现.html">
             
-                <a href="线性表的基本概念与实现.html">
+                <a href="../2-线性表/线性表的基本概念与实现.html">
             
                     
                     2.1 线性表的基本概念与实现
@@ -187,9 +187,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="线性表的结构体定义和基本操作.html">
+        <li class="chapter " data-level="1.3.2" data-path="../2-线性表/线性表的结构体定义和基本操作.html">
             
-                <a href="线性表的结构体定义和基本操作.html">
+                <a href="../2-线性表/线性表的结构体定义和基本操作.html">
             
                     
                     2.2 线性表的结构体定义和基本操作
@@ -205,9 +205,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="../3-栈和队列/">
+        <li class="chapter " data-level="1.4" data-path="./">
             
-                <a href="../3-栈和队列/">
+                <a href="./">
             
                     
                     第三章 栈和队列
@@ -219,9 +219,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="../3-栈和队列/栈和队列的基本概念.html">
+        <li class="chapter active" data-level="1.4.1" data-path="栈和队列的基本概念.html">
             
-                <a href="../3-栈和队列/栈和队列的基本概念.html">
+                <a href="栈和队列的基本概念.html">
             
                     
                     3.1 栈和队列的基本概念
@@ -232,9 +232,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="../3-栈和队列/栈和队列的存储结构、算法与应用.html">
+        <li class="chapter " data-level="1.4.2" data-path="栈和队列的存储结构、算法与应用.html">
             
-                <a href="../3-栈和队列/栈和队列的存储结构、算法与应用.html">
+                <a href="栈和队列的存储结构、算法与应用.html">
             
                     
                     3.2 栈和队列的存储结构、算法与应用
@@ -245,7 +245,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3" data-path="../3-栈和队列/抽象数据类型.md">
+        <li class="chapter " data-level="1.4.3" data-path="抽象数据类型.md">
             
                 <span>
             
@@ -293,7 +293,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >2.1 线性表的基本概念与实现</a>
+        <a href=".." >3.1 栈和队列的基本概念</a>
     </h1>
 </div>
 
@@ -308,22 +308,23 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="21&#x7EBF;&#x6027;&#x8868;&#x7684;&#x57FA;&#x672C;&#x6982;&#x5FF5;&#x4E0E;&#x5B9E;&#x73B0;">2.1&#x7EBF;&#x6027;&#x8868;&#x7684;&#x57FA;&#x672C;&#x6982;&#x5FF5;&#x4E0E;&#x5B9E;&#x73B0;</h1>
-<h3 id="1&#x7EBF;&#x6027;&#x8868;&#x7684;&#x5B9A;&#x4E49;">1.&#x7EBF;&#x6027;&#x8868;&#x7684;&#x5B9A;&#x4E49;</h3>
-<p>&#x7EBF;&#x6027;&#x8868;&#x662F;&#x5177;&#x6709;<strong>&#x76F8;&#x540C;&#x7279;&#x6027;</strong>&#x6570;&#x636E;&#x5143;&#x7D20;&#x7684;&#x4E00;&#x4E2A;<strong>&#x6709;&#x5E8F;</strong>&#x5E8F;&#x5217;&#x3002;
-&#x8BE5;&#x7EBF;&#x6027;&#x8868;&#x6240;&#x542B;&#x5143;&#x7D20;&#x7684;<strong>&#x4E2A;&#x6570;</strong>&#x53EB;&#x4F5C;&#x7EBF;&#x6027;&#x8868;&#x7684;&#x957F;&#x5EA6;&#xFF0C;&#x7528;n(n&#x2265;0)&#x8868;&#x793A;&#xFF0C;n&#x4E3A;0&#x65F6;&#x8868;&#x793A;&#x7A7A;&#x8868;&#x3002;</p>
-<h3 id="2&#x7EBF;&#x6027;&#x8868;&#x7684;&#x903B;&#x8F91;&#x7279;&#x6027;">2.&#x7EBF;&#x6027;&#x8868;&#x7684;&#x903B;&#x8F91;&#x7279;&#x6027;</h3>
-<p>&#x7EBF;&#x6027;&#x8868;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x8868;&#x5934;&#x5143;&#x7D20;&#xFF0C;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x8868;&#x5C3E;&#x5143;&#x7D20;&#xFF0C;&#x8868;&#x5934;&#x6CA1;&#x6709;&#x524D;&#x9A71;&#xFF0C;&#x8868;&#x5C3E;&#x6CA1;&#x6709;&#x540E;&#x7EE7;&#xFF0C;&#x5176;&#x4F59;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x524D;&#x9A71;&#x548C;&#x4E00;&#x4E2A;&#x540E;&#x7EED;&#x3002;</p>
-<h3 id="3&#x7EBF;&#x6027;&#x8868;&#x7684;&#x5B58;&#x50A8;&#x7ED3;&#x6784;">3.&#x7EBF;&#x6027;&#x8868;&#x7684;&#x5B58;&#x50A8;&#x7ED3;&#x6784;</h3>
-<p>&#x987A;&#x5E8F;&#x5B58;&#x50A8;&#x7ED3;&#x6784;&#x548C;&#x94FE;&#x5F0F;&#x5B58;&#x50A8;&#x7ED3;&#x6784;&#x3002;</p>
-<h4 id="1-&#x987A;&#x5E8F;&#x8868;">1) &#x987A;&#x5E8F;&#x8868;</h4>
-<p>&#x8868;&#x5185;&#x6240;&#x6709;&#x5143;&#x7D20;&#x6309;&#x7167;&#x903B;&#x8F91;&#x987A;&#x5E8F;&#x4F9D;&#x6B21;&#x7684;&#x5B58;&#x50A8;&#x5728;&#x8FDE;&#x7EED;&#x7684;&#x5B58;&#x50A8;&#x7A7A;&#x95F4;&#x4E2D;&#x3002;
-&#x53C2;&#x8003;JAVA ArrayList &#x5E95;&#x5C42;&#x4F7F;&#x7528;&#x6570;&#x7EC4;&#x5B9E;&#x73B0;&#x3002;</p>
-<h4 id="2&#xFF09;&#x94FE;&#x8868;">2&#xFF09;&#x94FE;&#x8868;</h4>
-<p>&#x94FE;&#x8868;&#x5B58;&#x50A8;&#x4E2D;&#xFF0C;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x4E0D;&#x5149;&#x5305;&#x62EC;&#x6240;&#x5B58;&#x5143;&#x7D20;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x8FD8;&#x5305;&#x62EC;&#x5143;&#x7D20;&#x7684;&#x903B;&#x8F91;&#x5173;&#x7CFB;&#x4FE1;&#x606F;(&#x5355;&#x94FE;&#x8868;&#xFF0C;&#x53CC;&#x94FE;&#x8868;)&#x3002;
-&#x53C2;&#x8003;JAVA LinkedList&#x3002;</p>
-<h4 id="3-&#x4E24;&#x79CD;&#x5B58;&#x50A8;&#x7ED3;&#x6784;&#x7684;&#x7C7B;&#x578B;&#x6BD4;&#x8F83;">3) &#x4E24;&#x79CD;&#x5B58;&#x50A8;&#x7ED3;&#x6784;&#x7684;&#x7C7B;&#x578B;&#x6BD4;&#x8F83;</h4>
-<p>&#x63D2;&#x5165;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x3001;&#x67E5;&#x627E;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x3001;&#x5220;&#x9664;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x3001;&#x3001;&#x3002;</p>
+                                <h1 id="31-&#x6808;&#x548C;&#x961F;&#x5217;&#x7684;&#x57FA;&#x672C;&#x6982;&#x5FF5;">3.1 &#x6808;&#x548C;&#x961F;&#x5217;&#x7684;&#x57FA;&#x672C;&#x6982;&#x5FF5;</h1>
+<h2 id="311-&#x6808;&#x7684;&#x57FA;&#x672C;&#x6982;&#x5FF5;">3.1.1 &#x6808;&#x7684;&#x57FA;&#x672C;&#x6982;&#x5FF5;</h2>
+<h3 id="1&#x6808;&#x7684;&#x5B9A;&#x4E49;">1.&#x6808;&#x7684;&#x5B9A;&#x4E49;</h3>
+<p>&#x6808;&#x662F;&#x4E00;&#x79CD;&#x53EA;&#x80FD;&#x5728;<strong>&#x4E00;&#x7AEF;</strong>&#x8FDB;&#x884C;&#x63D2;&#x5165;&#x6216;&#x5220;&#x9664;&#x64CD;&#x4F5C;&#x7684;<strong>&#x7EBF;&#x6027;&#x8868;</strong>&#x3002;&#x5176;&#x4E2D;&#x5141;&#x8BB8;&#x8FDB;&#x884C;&#x63D2;&#x5165;&#x6216;&#x5220;&#x9664;&#x64CD;&#x4F5C;&#x7684;&#x4E00;&#x7AEF;&#x53EB;&#x505A;&#x6808;&#x9876;(Top),&#x6808;&#x7684;&#x63D2;&#x5165;&#x548C;&#x5220;&#x9664;&#x64CD;&#x4F5C;&#x4E00;&#x822C;&#x79F0;&#x4E3A;<strong>&#x5165;&#x6808;</strong>&#x548C;<strong>&#x51FA;&#x6808;</strong>&#x3002;</p>
+<h3 id="2&#x6808;&#x7684;&#x7279;&#x70B9;">2.&#x6808;&#x7684;&#x7279;&#x70B9;</h3>
+<p><strong>&#x5148;&#x8FDB;&#x540E;&#x51FA;(FILO)</strong></p>
+<h3 id="3&#x6808;&#x7684;&#x5B58;&#x50A8;&#x7ED3;&#x6784;">3.&#x6808;&#x7684;&#x5B58;&#x50A8;&#x7ED3;&#x6784;</h3>
+<p>&#x6808;&#x5C31;&#x662F;&#x5148;&#x8FDB;&#x540E;&#x51FA;&#x7684;&#x7EBF;&#x6027;&#x8868;&#xFF0C;&#x53EF;&#x4EE5;&#x6309;&#x5B58;&#x50A8;&#x7ED3;&#x6784;&#x5206;&#x4E3A;&#xFF1A;<strong>&#x987A;&#x5E8F;&#x6808;</strong>&#x548C;<strong>&#x94FE;&#x5F0F;&#x6808;</strong>&#x3002;</p>
+<h3 id="4&#x6808;&#x7684;&#x6570;&#x5B66;&#x6027;&#x8D28;">4.&#x6808;&#x7684;&#x6570;&#x5B66;&#x6027;&#x8D28;</h3>
+<h1 id="&#xFFE5;&#xFFE5;&#xFFE5;&#xFFE5;">&#xFFE5;%#&#xFFE5;%#&#xFFE5;@&#xFFE5;@%</h1>
+<h2 id="312-&#x961F;&#x5217;&#x7684;&#x57FA;&#x672C;&#x6982;&#x5FF5;">3.1.2 &#x961F;&#x5217;&#x7684;&#x57FA;&#x672C;&#x6982;&#x5FF5;</h2>
+<h3 id="1&#x961F;&#x5217;&#x7684;&#x5B9A;&#x4E49;">1.&#x961F;&#x5217;&#x7684;&#x5B9A;&#x4E49;</h3>
+<p>&#x4E5F;&#x662F;&#x4E00;&#x79CD;&#x53D7;&#x9650;&#x7684;&#x7EBF;&#x6027;&#x8868;&#xFF0C;&#x53EA;&#x5141;&#x8BB8;&#x4ECE;&#x8868;&#x7684;&#x4E00;&#x7AEF;&#x63D2;&#x5165;&#xFF0C;&#x5728;&#x8868;&#x7684;&#x53E6;&#x4E00;&#x7AEF;&#x8FDB;&#x884C;&#x5220;&#x9664;&#x3002;</p>
+<h3 id="2&#x961F;&#x5217;&#x7684;&#x7279;&#x70B9;">2.&#x961F;&#x5217;&#x7684;&#x7279;&#x70B9;</h3>
+<p><strong>&#x5148;&#x8FDB;&#x5148;&#x51FA;</strong></p>
+<h3 id="3&#x961F;&#x5217;&#x7684;&#x5B58;&#x50A8;&#x7ED3;&#x6784;">3.&#x961F;&#x5217;&#x7684;&#x5B58;&#x50A8;&#x7ED3;&#x6784;</h3>
+<p>&#x987A;&#x5E8F;&#x961F;&#xFF0C;&#x94FE;&#x961F;</p>
 
                                 
                                 </section>
@@ -351,12 +352,12 @@
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 第二章 线性表">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 第三章 栈和队列">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="线性表的结构体定义和基本操作.html" class="navigation navigation-next " aria-label="Next page: 2.2 线性表的结构体定义和基本操作">
+                <a href="栈和队列的存储结构、算法与应用.html" class="navigation navigation-next " aria-label="Next page: 3.2 栈和队列的存储结构、算法与应用">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -367,7 +368,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"2.1 线性表的基本概念与实现","level":"1.3.1","depth":2,"next":{"title":"2.2 线性表的结构体定义和基本操作","level":"1.3.2","depth":2,"path":"2-线性表/线性表的结构体定义和基本操作.md","ref":"2-线性表/线性表的结构体定义和基本操作.md","articles":[]},"previous":{"title":"第二章 线性表","level":"1.3","depth":1,"path":"2-线性表/README.md","ref":"2-线性表/README.md","articles":[{"title":"2.1 线性表的基本概念与实现","level":"1.3.1","depth":2,"path":"2-线性表/线性表的基本概念与实现.md","ref":"2-线性表/线性表的基本概念与实现.md","articles":[]},{"title":"2.2 线性表的结构体定义和基本操作","level":"1.3.2","depth":2,"path":"2-线性表/线性表的结构体定义和基本操作.md","ref":"2-线性表/线性表的结构体定义和基本操作.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"2-线性表/线性表的基本概念与实现.md","mtime":"2019-10-04T07:19:24.618Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-07T11:49:21.286Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"3.1 栈和队列的基本概念","level":"1.4.1","depth":2,"next":{"title":"3.2 栈和队列的存储结构、算法与应用","level":"1.4.2","depth":2,"path":"3-栈和队列/栈和队列的存储结构、算法与应用.md","ref":"3-栈和队列/栈和队列的存储结构、算法与应用.md","articles":[]},"previous":{"title":"第三章 栈和队列","level":"1.4","depth":1,"path":"3-栈和队列/README.md","ref":"3-栈和队列/README.md","articles":[{"title":"3.1 栈和队列的基本概念","level":"1.4.1","depth":2,"path":"3-栈和队列/栈和队列的基本概念.md","ref":"3-栈和队列/栈和队列的基本概念.md","articles":[]},{"title":"3.2 栈和队列的存储结构、算法与应用","level":"1.4.2","depth":2,"path":"3-栈和队列/栈和队列的存储结构、算法与应用.md","ref":"3-栈和队列/栈和队列的存储结构、算法与应用.md","articles":[]},{"title":"3.3 抽象数据类型","level":"1.4.3","depth":2,"path":"3-栈和队列/抽象数据类型.md","ref":"3-栈和队列/抽象数据类型.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"3-栈和队列/栈和队列的基本概念.md","mtime":"2019-10-06T13:14:13.039Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-07T11:49:21.286Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
